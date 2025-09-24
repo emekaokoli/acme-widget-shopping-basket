@@ -193,43 +193,14 @@ Update the delivery strategy in `src/domain/delivery/default-delivery.ts` to mod
   - `test/` - Test files
   - `server.ts` - Application entry point
 ```
-  ``bash
-  src
- ┣ application
- ┃ ┗ basket-service.ts
- ┣ controllers
- ┃ ┗ basket-controller.ts
- ┣ domain
- ┃ ┣ delivery
- ┃ ┃ ┗ default-delivery.ts
- ┃ ┣ offers
- ┃ ┃ ┗ red-widget-offer.ts
- ┃ ┣ basket.ts
- ┃ ┣ product.ts
- ┃ ┗ types.ts
- ┣ middlewares
- ┃ ┣ fakeAuth.ts
- ┃ ┗ requireAuth.ts
- ┣ modules
- ┃ ┗ errorHandler.ts
- ┣ presentation
- ┃ ┗ routes
- ┃ ┃ ┗ basket-routes.ts
- ┣ validation
- ┃ ┗ basket-schema.ts
- ┣ test
- ┃ ┣ basket-service.test.ts
- ┃ ┣ delivery.test.ts
- ┃ ┣ offers.test.ts
- ┃ ┣ product.test.ts
- ┃ ┗ jest.config.js
- ┗ server.ts
-
-  ```
-
 
 ## Notes
 - Uses in-memory storage (resets on server restart)
 - No authentication/authorization implemented
 - Error handling is minimal for this example
 
+## about the developer
+- Name: [Emeka okoli]
+- Email: [emekaokoli00@gmail.com]
+- GitHub: [www.github.com/emekaokoli]
+- LinkedIn: [www.linkedin.com/in/emekaokoli]

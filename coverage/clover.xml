@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1758740874802" clover="3.2.0">
+  <project timestamp="1758740874802" name="All files">
+    <metrics statements="28" coveredstatements="27" conditionals="8" coveredconditionals="8" methods="13" coveredmethods="11" elements="49" coveredelements="46" complexity="0" loc="28" ncloc="28" packages="3" files="3" classes="3"/>
+    <package name="application">
+      <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
+      <file name="basket-service.ts" path="C:\Users\Emeka\Workspace\JOB_TESTS\thrivecart\src\application\basket-service.ts">
+        <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="23" type="stmt"/>
+        <line num="15" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="24" count="17" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="28" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="38" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.delivery">
+      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="default-delivery.ts" path="C:\Users\Emeka\Workspace\JOB_TESTS\thrivecart\src\domain\delivery\default-delivery.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="5" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="domain.offers">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="red-widget-offer.ts" path="C:\Users\Emeka\Workspace\JOB_TESTS\thrivecart\src\domain\offers\red-widget-offer.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="15" type="stmt"/>
+        <line num="7" count="15" type="stmt"/>
+        <line num="8" count="23" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

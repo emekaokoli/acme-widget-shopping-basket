@@ -11,6 +11,40 @@ A TypeScript implementation of a shopping basket system for Acme Widget Co, feat
 - Extensible offer system
 - Comprehensive test coverage with Jest
 
+### Architecture Assumptions
+
+- Layered / Onion Architecture
+- Separation of domain logic (Basket, Offers, Delivery) from infrastructure (Express, sessions, controllers).
+- Assumes this separation makes it easy to swap frameworks (e.g., NestJS, Fastify) without rewriting business logic.
+- Stateless Controllers, Stateful Basket
+- Controllers are thin and stateless, delegating all work to the Basket domain object.
+- Basket state is tied to session storage — assumes one basket per user/session.
+- Strategy Pattern for Extensibility
+- Delivery cost and offers are passed into the basket as strategies.
+- Assumes new promotions or delivery rules can be plugged in without changing basket core.
+
+### Session-Based Identity
+- Assumes sessions are sufficient for user identity in this POC (no OAuth/JWT).
+- In production, baskets would persist per user ID in a DB or cache, not just session memory.
+
+### In-Memory Storage
+- Assumes basket data lives in memory for demo simplicity.
+- n production, this would be replaced with Redis/Postgres for persistence and horizontal scaling.
+
+### Single Service
+
+- Entire app runs as one Express server (monolith).
+- Assumes this is enough for a proof of concept; in production, could evolve into microservices (catalog, basket, checkout).
+
+### Validation at the Edges
+
+- Zod validates incoming requests at the API boundary only.
+- Assumes internal domain objects won’t receive invalid data once inputs are validated.
+
+Simplified Error Handling
+- Minimal error handling (invalid product code, bad JSON).
+- Assumes richer error handling/logging/observability would be added later.
+
 ## Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
